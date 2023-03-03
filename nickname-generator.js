@@ -22,7 +22,7 @@
 function nicknameGenerator(name) {
 	let splitName = [...name];
 	if (splitName.length < 4) return "Error: Name too short";
-	if (splitName[2].includes["a", "e", "i", "o", "u"]) {
+	if (["a", "e", "i", "o", "u"].includes(splitName[2])) {
 		return splitName.splice(0, 4).join("");
 	} else return splitName.splice(0, 3).join("");
 	// split into array
@@ -36,7 +36,7 @@ nicknameGenerator("Joanne");
 // return
 // examples above
 
-// correct answer
+// better answer
 const nicknameGenerator2 = (name) => name.length > 3 
   ? name.slice(0,  3 + 'aeiou'.includes(name[2])) 
   : 'Error: Name too short'

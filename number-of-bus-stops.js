@@ -19,8 +19,7 @@ let number = function (busStops) {
 	// return value
 };
 
-let number1 = (busStops) =>
-	busStops.reduce((remaining, [on, off]) => remaining + on - off, 0);
+let number1 = (busStops) => busStops.reduce((remaining, [on, off]) => remaining + on - off, 0);
 // p- list of integer pairs
 // r- return
 // [[10,0],[3,5],[5,8]] --> 5;

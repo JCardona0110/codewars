@@ -15,7 +15,3 @@ function getGrade(s1, s2, s3) {
 	else if (average < 90) return "B";
 	else return "A";
 }
-function shortenToDate(longDate) {
-	let newDate = longDate.split("")[0];
-	return newDate;
-}

@@ -4,3 +4,6 @@
 //
 
 const hero = (bullets, dragons) => (bullets >= dragons * 2 ? true : false);
+
+// shorter version:
+const hero = (bullets, dragons) => bullets >= dragons * 2;

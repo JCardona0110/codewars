@@ -5,3 +5,5 @@ function opposite(number) {
 }
 
 const opposite = (number) => -number;
+
+const removeChar = (str) => [...s].pop().shift().join();

@@ -7,7 +7,5 @@
 //
 // better one!
 
-let lovefunc = (f1, f2) => !!((f1 + f2) % 2);
-
 //better and understandable
 const lovefunc = (f1, f2) => (f1 + f2) % 2 !== 0;

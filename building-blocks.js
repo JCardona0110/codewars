@@ -68,14 +68,14 @@ class Block {
 	}
 }
 // clever answer
-function Block([w, l, h]) {
-	var v = h * l * w,
-		a = 2 * h * w + 2 * (h + w) * l;
+function Block([width, length, height]) {
+	var volume = height * length * width,
+		area = 2 * height * width + 2 * (height + width) * length;
 	return {
-		getWidth: () => w,
-		getLength: () => l,
-		getHeight: () => h,
-		getVolume: () => v,
-		getSurfaceArea: () => a,
+		getWidth: () => width,
+		getLength: () => length,
+		getHeight: () => height,
+		getVolume: () => volume,
+		getSurfaceArea: () => area,
 	};
 }

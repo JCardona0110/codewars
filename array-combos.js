@@ -12,6 +12,7 @@ function solve(arr) {
 };
 
 // or one liner
+
 const solve = arr => arr.reduce((acc, c) => acc * new Set(c).size, 1)
 
 solve([[1,2],[4,4],[5,6,6]]) 

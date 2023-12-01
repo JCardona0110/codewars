@@ -22,6 +22,13 @@ function solve(arr){
 const solve = arr => [...new Set(arr.reverse())].reverse()
 
 solve([3, 4, 4, 3, 6, 3])
+
+const sumContiguousArray = function (arr) {
+  // get last item
+  const lastItem = arr[arr.length - 1]
+  // Gauss's trick
+  return lastItem * (lastItem + 1) / 2
+}
 // array of nums
 // return
 // Example:
